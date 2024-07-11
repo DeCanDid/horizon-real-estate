@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "res_name": "ELITE RESIDENCE",
+      "img": "https://plus.unsplash.com/premium_photo-1661877360520-f70603f7c0d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHJlYWwlMjBlc3RhdGUlMjBpbnRlcmlvciUyMGltYWdlfGVufDB8fDB8fHww",
+      "desc": "Terra Garden, Montessori Road, Sangotedo",
+      "see_more": "See more"
+    },
+    {
+        "id": 2,
+        "res_name": "ROYAL VILLA",
+        "img": "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHJlYWwlMjBlc3RhdGUlMjBpbnRlcmlvciUyMGltYWdlfGVufDB8fDB8fHww",
+        "desc": "Terra Garden, Montessori Road, Sangotedo",
+        "see_more": "See more"
+      },
+      {
+        "id": 3,
+        "res_name": "John Doe",
+        "img": "https://plus.unsplash.com/premium_photo-1661963209358-0f4d5f509d10?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHJlYWwlMjBlc3RhdGUlMjBpbnRlcmlvciUyMGltYWdlfGVufDB8fDB8fHww",
+        "desc": "Terra Garden, Montessori Road, Sangotedo",
+        "see_more": "See more"
+      },
+      {
+        "id": 4,
+        "res_name": "John Doe",
+        "img": "https://plus.unsplash.com/premium_photo-1661880106258-f1e62559f4e1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fHJlYWwlMjBlc3RhdGUlMjBpbnRlcmlvciUyMGltYWdlfGVufDB8fDB8fHww",
+        "desc": "Terra Garden, Montessori Road, Sangotedo",
+        "see_more": "See more"
+      },
+      {
+        "id": 5,
+        "res_name": "John Doe",
+        "img": "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHJlYWwlMjBlc3RhdGUlMjBpbnRlcmlvciUyMGltYWdlfGVufDB8fDB8fHww",
+        "desc": "Terra Garden, Montessori Road, Sangotedo",
+        "see_more": "See more"
+      },
+      {
+        "id": 6,
+        "res_name": "John Doe",
+        "img": "https://plus.unsplash.com/premium_photo-1661878863422-9657ff7407e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzd8fHJlYWwlMjBlc3RhdGUlMjBpbnRlcmlvciUyMGltYWdlfGVufDB8fDB8fHww",
+        "desc": "Terra Garden, Montessori Road, Sangotedo",
+        "see_more": "See more"
+      },
+      {
+        "id": 7,
+        "res_name": "John Doe",
+        "img": "https://plus.unsplash.com/premium_photo-1661913145853-b6bb810d26e8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAxfHxyZWFsJTIwZXN0YXRlJTIwaW50ZXJpb3IlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D",
+        "desc": "Terra Garden, Montessori Road, Sangotedo",
+        "see_more": "See more"
+      },
+      {
+        "id": 8,
+        "res_name": "John Doe",
+        "img": "https://plus.unsplash.com/premium_photo-1661880234863-bc0723394376?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA5fHxyZWFsJTIwZXN0YXRlJTIwaW50ZXJpb3IlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D",
+        "desc": "Terra Garden, Montessori Road, Sangotedo",
+        "see_more": "See more"
+      },
+      {
+        "id": 9,
+        "res_name": "John Doe",
+        "img": "https://plus.unsplash.com/premium_photo-1661872779873-5ce7b9235a0e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMzfHxyZWFsJTIwZXN0YXRlJTIwaW50ZXJpb3IlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D",
+        "desc": "Terra Garden, Montessori Road, Sangotedo",
+        "see_more": "See more"
+      }
+  ]
+  
