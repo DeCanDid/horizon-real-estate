@@ -12,9 +12,9 @@ function App() {
    {/* <Header/> */}
    <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='/home' element={<Navigate to='/'/>}/>
-      <Route path='/properties' element={<Locations/>}/>
-      <Route path='About_Us'  element={<About/>}/>
+      {/* <Route path='/home' element={<Navigate to='/'/>}/> */}
+      {/* <Route path='/properties' element={<Locations/>}/> */}
+      {/* <Route path='About_Us'  element={<About/>}/> */}
    </Routes>
    </>
   );
