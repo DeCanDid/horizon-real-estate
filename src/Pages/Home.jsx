@@ -40,7 +40,7 @@ const Home = () => {
           setFade(true);
 
           setTimeout(() => {
-          setStartIndex((prevIndex) => Math.max(prevIndex - 3, 0));
+          setStartIndex((prevIndex) => Math.max(prevIndex - 1, 0));
           setFade(false);
 
           }, 300);
@@ -52,11 +52,11 @@ const Home = () => {
 
       const handleNext = () => {
 
-        if (startIndex < images.length - 3){
+        if (startIndex < images.length - 1){
           setFade(true);
           setTimeout(() => {
 
-            setStartIndex((prevIndex) => Math.min(prevIndex + 3, images.length - 3));
+            setStartIndex((prevIndex) => Math.min(prevIndex + 1, images.length - 1));
             setFade(false);
             
           }, 300);
@@ -82,6 +82,7 @@ const Home = () => {
             <div className="sec1_col2">
                 <img src={img1} alt="" />
             </div>
+
         </section>
 
         <Fetch/>
@@ -153,36 +154,6 @@ const Home = () => {
           </div>
 
         </section>
-
-        <div className="news_letter">
-          <form action="#">
-          <h2>OUR NEWSLETTER</h2>
-          <p>Be the first to hear our new updates</p>
-          <input type="text" placeholder='Enter your email address'/>
-
-          <div className='btn_newsletter'>
-          <button>Subscribe</button>
-          </div>
-          </form>
-        </div>
-
-        <footer>
-          <div className="footer_col1">
-            <h3> HORIZON</h3>
-          </div>
-
-          <div className="footer_col2">
-          <small>copyright 2024 HORIZON Real Estate</small>
-          </div>
-
-          <div className="footer_col3">
-            <Link><i class="icofont-twitter"></i></Link>
-            <Link><i className="icofont-facebook"></i></Link>
-            <Link><i className="icofont-linkedin"></i></Link>
-            <Link><i className="icofont-instagram"></i></Link>
-            <Link><i className="icofont-youtube-play"></i></Link>
-          </div>
-        </footer>
 
 
     </>

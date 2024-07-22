@@ -9,12 +9,12 @@ const Header = () => {
 <nav id='main_nav' class="navbar py-3 navbar-expand-lg px-5 shadow">
 
     <div class="container-fluid">
-    <Link to='/' class="navbar-brand" href="#">HORIZON</Link>
+    <Link to='/' className="navbar-brand horizon" href="#">HORIZON</Link>
 
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HORIZON</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
@@ -24,7 +24,7 @@ const Header = () => {
           </li>
 
           <li class="nav-item">
-            <a id='nav_link' class="nav-link mx-lg-2" href="#">Properties</a>
+            <Link to='/properties' id='nav_link' class="nav-link mx-lg-2" href="#">Properties</Link>
           </li>
 
           <li class="nav-item">

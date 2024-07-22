@@ -49,3 +49,21 @@
     transition: 1.2s ease;
 
 }
+
+/* media query */
+
+@media (max-width:1028px) {
+    .ppty_card{
+        width: 45%;
+    }
+}
+
+@media (max-width:750px) {
+
+    .ppty_card_wrap{
+        width: 100%;
+    }
+    .ppty_card{
+        width: 80%;
+    }
+}
