@@ -9,7 +9,7 @@ const Header = () => {
 <nav id='main_nav' class="navbar py-3 navbar-expand-lg px-5 shadow">
 
     <div class="container-fluid">
-    <Link to='/' className="navbar-brand horizon" href="#">HORIZON</Link>
+    <Link to='/' className="navbar-brand horizon" >HORIZON</Link>
 
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -24,19 +24,19 @@ const Header = () => {
           </li>
 
           <li class="nav-item">
-            <Link to='' id='nav_link' class="nav-link mx-lg-2" href="#">Properties</Link>
+            <Link to='/properties' id='nav_link' class="nav-link mx-lg-2" >Properties</Link>
           </li>
 
           <li class="nav-item">
-            {/* <Link to='About_Us' id='nav_link' class="nav-link mx-lg-2" href="#">About Us</Link> */}
+            <Link to='About_Us' id='nav_link' class="nav-link mx-lg-2" >About Us</Link>
           </li>
 
           <li class="nav-item">
-            <a id='nav_link' class="nav-link mx-lg-2" href="#">Contact Us</a>
+            <Link to='contact' id='nav_link' class="nav-link mx-lg-2" >Contact Us</Link>
           </li>
           
           <li class="nav-item">
-            <a id='nav_link contact_us' class="nav-link mx-lg-2 contact_us" href="#" >Contact Us</a>
+            <a id='nav_link contact_us' class="nav-link mx-lg-2 contact_us"  >Contact Us</a>
           </li>
           
         </ul>

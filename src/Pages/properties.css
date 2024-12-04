@@ -1,0 +1,248 @@
+.ppt_background{
+    background-image: url(https://www.homes.com/assets/images/113/DesktopWeb-Hero-V2.png);
+    height: 500px;
+}
+.bg_transparent{
+    color: #fff;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 500px;
+}
+.bg_transparent h1{
+    font-size: 45px;
+    margin:0 0 40px 0;
+    font-weight: 600;
+}
+.bg_transparent input{
+    width: 50%;
+    height: 55px;
+    padding: 10px 20px;
+    border-radius: 28px;
+    border: none;
+    outline: none;
+    font-size: large;
+}
+
+.contents{
+    width: 80%;
+    margin: 40px auto;
+
+}
+.blocks{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    margin: 40px auto;
+    /* border: 2px solid hotpink; */
+}
+.blocks .block{
+    width: 48%;
+    height: 180px;
+    margin: 5px;
+    border-radius: 4px;
+    background-color: darkmagenta;
+}
+.blocks > div{
+    background-image: url(https://media.istockphoto.com/id/1470227729/photo/painted-ladies-in-san-francisco-at-dusk.webp?b=1&s=170667a&w=0&k=20&c=zc_1ItX3H0bGai6JwBCqymrM-bjJX4phqVStBCPQb84=);
+    background-position: center;
+}
+
+.slider_container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.slider_container a{
+    text-align: center;
+    padding: 5px 0px;
+    text-decoration: none;
+    background-color:#EF5F00;
+    color: #fff;
+    display: block;
+    width: 15%;
+    margin:20px auto;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.image-slider{
+    padding: 30px;
+    margin: 50px auto;
+    position: relative;
+    justify-content: center;
+
+}
+
+.mini span:nth-of-type(1){
+    font-weight: lighter;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+
+.mini span:nth-of-type(2){
+    color: grey;
+    font-weight: lighter;
+    margin-left: 8px;
+}
+
+.mini p:nth-of-type(1){
+    font-weight: lighter;
+    margin-left: 8px;
+}
+
+
+.mini img{
+    width: 95%;
+    display: block;
+    margin: auto;
+    height: 230px;
+}
+
+
+.mini_wrap .city{
+    margin-left: 10%;
+    font-size: larger;
+}
+
+/* contact page style */
+.sayHello{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.sayHello > div{
+    width: 45%;
+}
+.sayHello img{
+    width: 100%;
+}
+
+.sayHello input, textarea{
+    outline:1px solid #EF5F00;
+}
+.sayHello button{
+    background-color: #EF5F00;
+    color: #fff;
+    padding: 10px 30px;
+    font-weight: 550;
+}
+
+/* Checkout page style */
+
+.checkOut{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.checkOut > div{
+    width: 50%;
+    border: 3px solid white;
+
+}
+.firstChild_img{
+    height: 405px;
+}
+.checkOut .firstChild_img img{
+    width: 100%;
+    height: 100%;
+    border: 3px solid white;
+}
+
+.checkOut_col2 > div > img{
+    width: 50%;
+    height: 200px;
+    border: 2px solid white;
+}
+
+div.details_checkout{
+    width: 90%;
+    margin:20px auto;
+    line-height: 8px;
+
+}
+
+div.map_agent{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+div.agent_box, .map{
+    width: 50%;
+}
+div.map > iframe{
+    width: 100%;
+}
+
+div.agent_box a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 400;
+}
+
+div.agent_box button{
+    background-color: #EF5F00 !important;
+    color: #fff;
+}
+
+div.agent_box button:hover{
+    color: #fff;
+}
+
+
+
+
+/* media Query */
+
+@media (max-width:1030px) {
+    .ppt_background{
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 780px) {
+  
+    .contact_wrapper :nth-child(1){
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .contact_wrapper :nth-child(2){
+        display: block;
+    }
+  
+    .sayHello > div{
+        width: 100%;
+        margin: 30px 0;
+    }
+    .sayHello img{
+        display: block;
+        margin: auto;
+    }
+}
+@media (max-width:640px) {
+    
+    .sayHello{
+        padding: 40px 20px;
+    }
+    .blocks{
+        width:100%;
+    }
+    .blocks > .block{
+        width: 95%;
+    }
+    .slider_container{
+        width: 100%;
+    }
+    .image-slider{
+        width: 100%;
+        padding: 5px;
+    }
+}

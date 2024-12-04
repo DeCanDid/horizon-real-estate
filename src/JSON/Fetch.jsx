@@ -32,7 +32,7 @@ const Fetch = () => {
                 <div className="ppty_descriptn">
                    <b className='txt shadow'>{item.res_name}</b> 
                    <p>{item.desc}</p>
-                   <Link><button>{item.see_more}</button></Link>
+                   <Link to='properties'><button>{item.see_more}</button></Link>
                 </div>
 
             </div>

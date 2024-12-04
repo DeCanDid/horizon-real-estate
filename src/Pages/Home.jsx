@@ -76,7 +76,7 @@ const Home = () => {
             <div className="sec1_col1">
                 <h2>Find your Perfect Home</h2>
                 <p>Discover the place where your dreams begin, where every corners hlds the promise of a new adventure, and where cherished memories take root and floursh</p>
-                <button>Explore</button>
+                <Link to='properties'><button>Explore</button></Link>
             </div>
 
             <div className="sec1_col2">
