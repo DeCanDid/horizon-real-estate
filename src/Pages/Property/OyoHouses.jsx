@@ -1,10 +1,12 @@
 import '../Property/Location.css';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const OyoHouses = () => {
 
   const [locations, setlocations_data] = useState([]);
     const [loading, setloading] = useState(true);
+    const navigate = useNavigate();
 
     useEffect(() => {
     
@@ -14,6 +16,12 @@ const OyoHouses = () => {
       .catch((error) => console.error('Error fetching data', error))
 
     }, [])
+
+    const handleBuy = (index)=>{
+      console.log("Property Index:", index);
+      console.log("Selected Property:", locations[index]);
+      navigate(`/checkout/${index}`)
+    }
   return (
     <div>
         
@@ -34,7 +42,7 @@ const OyoHouses = () => {
             <li>{item.details}</li>
             <li>{item.address}</li>
             <li>{item.area}</li>
-            {/* <button>Buy</button> */}
+            <button className='rounded-2 mt-4' onClick={()=>handleBuy(index)}>Buy</button>
             </div>
           </div>
             

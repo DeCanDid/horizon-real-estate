@@ -83,6 +83,14 @@
     display: block;
 }
 
+.details > button{
+    background-color: #EF5F00;
+    color: #fff;
+    padding: 0px 10px;
+    outline: none;
+    border: none;
+}
+
 /* meida query */
 
 @media (max-width: 1124px) {

@@ -28,8 +28,14 @@ const CheckOut = () => {
 
     <div className='checkOut my-3'>
 
-      <div className='firstChild_img'>
-        <img src={property.src} alt={property.title} />
+      <div className='firstChild_img' id='firstchild_img'>
+        <div>
+          <img src={property.src} alt={property.title} />
+        </div>
+
+        <div className='hidden'>
+          <img src={property.sorround} alt={property.title} />  
+        </div>
       </div>
 
       <div className='checkOut_col2'>
@@ -49,7 +55,6 @@ const CheckOut = () => {
     </div>
 
      <div className='details_checkout'>
-     {/* <h1>Selected Index Property</h1> */}
       <p> <b>{property.price}</b></p>
       <p> {property.details}</p>
       <p> {property.address}</p>
@@ -75,7 +80,7 @@ const CheckOut = () => {
               {/* <a href="">+2349033179950</a> */}
             </div>
 
-            <div className='my-2 col-9 mx-auto'>
+            <div className='my-2 col-9 mx-auto msg'>
               <textarea className='form-control' name="" id=""placeholder='Hi Ola, I would like to know more about this listing.' rows='5'></textarea>
               
             </div>

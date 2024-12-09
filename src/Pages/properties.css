@@ -173,7 +173,7 @@ div.map_agent{
     justify-content: space-between;
 }
 div.agent_box, .map{
-    width: 50%;
+    width: 48%;
 }
 div.map > iframe{
     width: 100%;
@@ -195,6 +195,10 @@ div.agent_box button:hover{
     color: #fff;
 }
 
+div.hidden{
+    display: none;
+}
+
 
 
 
@@ -205,6 +209,41 @@ div.agent_box button:hover{
         background-position: center;
         background-size: cover;
     }
+
+    .checkOut_col2 > div{
+        text-align: center;
+    }
+
+    .checkOut_col2 > div > img{
+        width: 100%;
+    }
+
+    div.map_agent{
+        display: block;
+    }
+    
+    div.map, div.agent_box{
+        width: 80%;
+        margin:20px auto;
+        padding: 20px;
+    }
+
+    .firstChild_img{
+        width: 55% !important;
+        height: fit-content;
+    }
+    .checkOut_col2{
+        width: 45% !important;
+    }
+
+    div.hidden{
+        display: block;
+    }
+
+    .checkOut_col2_col2 :last-child{
+        display: none;
+    }
+
 }
 
 @media (max-width: 780px) {
@@ -226,6 +265,10 @@ div.agent_box button:hover{
         display: block;
         margin: auto;
     }
+
+    div.map, div.agent_box{
+        width: 90%;
+    }
 }
 @media (max-width:640px) {
     
@@ -245,4 +288,35 @@ div.agent_box button:hover{
         width: 100%;
         padding: 5px;
     }
+
+    div.map, div.agent_box{
+        width: 100%;
+    }
+    div.agent_box > iframe{
+        width: 100% !important;
+    }
+    .msg{
+        width: 100%;
+    }
+
+    .checkOut{
+        display: block;
+        height: fit-content !important;
+    }
+    .firstChild_img{
+        width: 100% !important;
+    }
+
+    .checkOut_col2{
+        width: 100% !important;
+    }
+
+    .checkOut_col2 div:nth-of-type(1) img{
+        width: 50% !important;
+    }
+    
+    div.hidden{
+        display: none;
+    }
+
 }

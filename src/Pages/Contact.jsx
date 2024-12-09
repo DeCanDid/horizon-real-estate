@@ -91,7 +91,7 @@ const Contact = () => {
         <div className='my-2'>
 
         <input name='name' onChange={formik.handleChange} type="text" 
-        className={formik.errors.name ? 'form-control is-invalid' : 'form-control'} placeholder="Name" 
+        className={formik.touched.name&&formik.errors.name ? 'form-control is-invalid' : 'form-control'} placeholder="Name" 
         value={formik.values.name} 
         onBlur={formik.handleBlur}   
         required/>
@@ -101,7 +101,7 @@ const Contact = () => {
         </div>
 
         <div className='my-3'>
-        <input name='email' onChange={formik.handleChange} type="email" className={formik.errors.email ? 'form-control is-invalid' : 'form-control'} placeholder="email" 
+        <input name='email' onChange={formik.handleChange} type="email" className={formik.touched.email&&formik.errors.email ? 'form-control is-invalid' : 'form-control'} placeholder="email" 
         value={formik.values.email} onBlur={formik.handleBlur}
          required/>
         {formik.touched.email ? <small className='text-danger'>{formik.errors.email}</small> : ''}
@@ -111,7 +111,7 @@ const Contact = () => {
 
     <div className="mb-3">
 
-        <textarea name='message' onChange={formik.handleChange} className={formik.errors.message ? 'form-control is-invalid' : 'form-control'} id="exampleFormControlTextarea1" rows="3" placeholder='Type your message' value={formik.values.message}
+        <textarea name='message' onChange={formik.handleChange} className={formik.touched.message&&formik.errors.message ? 'form-control is-invalid' : 'form-control'} id="exampleFormControlTextarea1" rows="3" placeholder='Type your message' value={formik.values.message}
         onBlur={formik.handleBlur} required></textarea>
         {formik.touched.message && <small className='text-danger'>{formik.errors.message}</small>}
     </div>

@@ -46,7 +46,7 @@ const LagosHouses = () => {
             <li>{item.details}</li>
             <li>{item.address}</li>
             <li>{item.area}</li>
-            <button onClick={()=> handleBuy(index)}>Buy</button>
+            <button className='rounded-2 mt-4' onClick={()=> handleBuy(index)}>View</button>
             </div>
           </div>
             
