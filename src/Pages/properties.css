@@ -121,7 +121,7 @@
     width: 100%;
 }
 
-.sayHello input, textarea{
+.sayHello input, textarea, .msg input{
     outline:1px solid #EF5F00;
 }
 .sayHello button{

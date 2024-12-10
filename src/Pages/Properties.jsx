@@ -8,7 +8,7 @@ const Properties = ( { content, PropertyL, settings }) => {
     const sliderRef = useRef(null);
 
     const defaultSettings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,

@@ -1,13 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import '../Pages/properties.css';
 import img from '../Images/playstore.png'
 
 const CheckOut = () => {
+    const nameReference = useRef(null);
+    const messageReference = useRef(null);
+
     const {index} = useParams() //to extract the index from the route paramters inside the app.js
     const [locations, setlocations_data] = useState([]); 
     const [loading, setLoading] = useState(true); 
     // const [property, setproperty] = useState(null);
+
+
 
     useEffect(() => {
     
@@ -23,6 +28,23 @@ const CheckOut = () => {
 
       const property = locations[parseInt(index)];
       if (!property) return <p>Loading property details....</p>
+
+      const handleSubmitEmail = ()=>{
+        const name = nameReference.current.value;
+        const message = messageReference.current.value;
+
+        if (!name || !message){
+          alert('Please fill out all the fields.');
+          return;
+        }
+
+        // construct the mailto link
+        const subject = encodeURIComponent('Inquiry about listing');
+        const body = encodeURIComponent(`Hi Ola, \n\n${message}\n\n${name}`);
+        const mailtoLink = `mailto:olacandid@gmail.com?subject=${subject}&body=${body}`;
+
+        window.location.href = mailtoLink;
+      }
   return (
     <>
 
@@ -81,12 +103,13 @@ const CheckOut = () => {
             </div>
 
             <div className='my-2 col-9 mx-auto msg'>
-              <textarea className='form-control' name="" id=""placeholder='Hi Ola, I would like to know more about this listing.' rows='5'></textarea>
+              <input ref={nameReference} type="text" placeholder='Your Name' className='form-control my-2' />
+              <textarea ref={messageReference} className='form-control' name="" id=""placeholder='Hi Ola, I would like to know more about this listing.' rows='5'></textarea>
               
             </div>
 
             <div>
-              <button className='btn'>Send a Message</button>
+              <button className='btn' onClick={handleSubmitEmail}>Send a Message</button>
             </div>
           </form>
 
