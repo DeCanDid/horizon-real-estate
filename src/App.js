@@ -17,6 +17,7 @@ import KwaraHouses from './Pages/Property/KwaraHouses';
 import { KanoHouses } from './Pages/Property/KanoHouses';
 import OgunHouses from './Pages/Property/OgunHouses';
 import Contact from './Pages/Contact';
+import Notfound from './Pages/Notfound';
 
 function App() {
   const [selectedProperty, setselectedProperty] = useState(null);
@@ -57,6 +58,8 @@ function App() {
       <Route path='/checkout/:index' element={ <CheckOut/>}/>
 
       <Route path='contact'  element={<Contact/>}/>
+
+      <Route path='/*' element={<Notfound/>}/>
 
    </Routes>
    </>

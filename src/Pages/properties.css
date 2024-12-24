@@ -161,7 +161,8 @@
 
 div.details_checkout{
     width: 90%;
-    margin:20px auto;
+    padding: 0 5px;
+    margin:40px auto;
     line-height: 8px;
 
 }
@@ -197,6 +198,37 @@ div.agent_box button:hover{
 
 div.hidden{
     display: none;
+}
+
+/* Notfound page design */
+
+.notFound_msg{
+    text-align: center;
+    padding: 50px 0;
+}
+.notFound_msg p{
+    font-size: larger;
+}
+
+.redirect_links div{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.redirect_links div > button{
+    width: 250px;
+    background: transparent;
+    padding: 10px;
+    font-size: larger;
+    outline: none;
+    border: none;
+    background-color: #EF5F00;
+    border-radius: 5px;
+}
+
+.redirect_links div button > a{
+    color: #fff;
+    text-decoration: none;
 }
 
 
@@ -317,6 +349,12 @@ div.hidden{
     
     div.hidden{
         display: none;
+    }
+
+    /* notfound */
+    .notFound_msg{
+        width: 90%;
+        margin: auto;
     }
 
 }

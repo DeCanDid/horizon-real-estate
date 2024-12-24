@@ -1,18 +1,34 @@
 import { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import '../Pages/properties.css';
-import img from '../Images/playstore.png'
+import img from '../Images/playstore.png';
+import { useForm, ValidationError } from '@formspree/react';
 
 const CheckOut = () => {
-    const nameReference = useRef(null);
-    const messageReference = useRef(null);
-
-    const {index} = useParams() //to extract the index from the route paramters inside the app.js
-    const [locations, setlocations_data] = useState([]); 
-    const [loading, setLoading] = useState(true); 
-    // const [property, setproperty] = useState(null);
+  const [locations, setlocations_data] = useState([]); 
+  const [loading, setLoading] = useState(true);
+  const [showmessage, setshowmessage] = useState(false);
+  const [state, handleSubmit] = useForm('xqakogak');
 
 
+  const {index} = useParams() //to extract the index from the route paramters inside the app.js
+
+    // const nameReference = useRef(null);
+    // const messageReference = useRef(null);
+
+    useEffect(() => {
+      if(state.succeeded){
+        setshowmessage(true);
+         const timer = setTimeout(() => {
+           setshowmessage(false)
+         }, 3000);
+ 
+         return () => {
+           clearTimeout(timer)
+         }
+      }
+       
+     }, [state.succeeded])
 
     useEffect(() => {
     
@@ -29,22 +45,31 @@ const CheckOut = () => {
       const property = locations[parseInt(index)];
       if (!property) return <p>Loading property details....</p>
 
-      const handleSubmitEmail = ()=>{
-        const name = nameReference.current.value;
-        const message = messageReference.current.value;
+      // const handleSubmitEmail = ()=>{
+      //   const name = nameReference.current.value;
+      //   const message = messageReference.current.value;
 
-        if (!name || !message){
-          alert('Please fill out all the fields.');
-          return;
-        }
+      //   if (!name || !message){
+      //     alert('Please fill out all the fields.');
+      //     return;
+      //   }
 
-        // construct the mailto link
-        const subject = encodeURIComponent('Inquiry about listing');
-        const body = encodeURIComponent(`Hi Ola, \n\n${message}\n\n${name}`);
-        const mailtoLink = `mailto:olacandid@gmail.com?subject=${subject}&body=${body}`;
+      //   // construct the mailto link
+      //   const subject = encodeURIComponent('Inquiry about listing');
+      //   const body = encodeURIComponent(`Hi Ola, \n\n${message}\n\n${name}`);
+      //   const mailtoLink = `mailto:olacandid@gmail.com?subject=${subject}&body=${body}`;
 
-        window.location.href = mailtoLink;
-      }
+      //   window.location.href = mailtoLink;
+      // }
+
+         // formspreee form validation
+
+
+    
+
+    // if(state.succeeded){
+    //     return returnMessage;
+    // }
   return (
     <>
 
@@ -93,23 +118,39 @@ const CheckOut = () => {
         </div>
 
         <div className="agent_box shadow">
-          <form className='text-center'>
+          <form className='text-center' onSubmit={handleSubmit}>
             <div>
               <div>
-                <img src={img} alt="listing_agent" />
+                <img src={img} alt="listing_agent" style={
+                  {width: '150px'}
+                } />
               </div>
+
+            {
+              showmessage && (
+              <div className='rounded-2 py-3 mx-auto w-75 bg-success'>
+                <p style={{color:'#fff'}}> 
+                  Thanks for your message, we will get back to you shortly
+                </p>
+              </div>
+       
+              ) 
+            }
               
-              {/* <a href="">+2349033179950</a> */}
+              
             </div>
 
             <div className='my-2 col-9 mx-auto msg'>
-              <input ref={nameReference} type="text" placeholder='Your Name' className='form-control my-2' />
-              <textarea ref={messageReference} className='form-control' name="" id=""placeholder='Hi Ola, I would like to know more about this listing.' rows='5'></textarea>
+              <input  type="text" placeholder='Your Name' className='form-control my-2' name='name' required/>
+              <ValidationError prefix='name' field='name' errors={state.errors}/>
+
+              <textarea className='form-control' name="message" id=""placeholder='Hi Ola, I would like to know more about this listing.' rows='5' required></textarea>
+              <ValidationError prefix='message' field='message' errors={state.errors} />
               
             </div>
 
             <div>
-              <button className='btn' onClick={handleSubmitEmail}>Send a Message</button>
+              <button type='submit' disabled={state.submitting} className='btn'>Send a Message</button>
             </div>
           </form>
 

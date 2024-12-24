@@ -10,7 +10,7 @@
   background-color: #fff;
   z-index: 1000;
 }
-.horizon{
+.horizon, #offcanvasNavbar{
   color: #EF5F00;
   font-weight: bold;
 }
@@ -18,7 +18,7 @@
 .contact_us{
   background-color: #EF5F00;
   border-radius: 4px;
-  color: #fff;
+  color: #fff !important;
 }
 
 #navbar_toggler{
