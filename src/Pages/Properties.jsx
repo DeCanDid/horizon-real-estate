@@ -108,7 +108,7 @@ const Properties = ( { content, PropertyL, settings }) => {
                 <i className="icofont-simple-right"></i>
       </button>
 
-    </div >
+            </div >
 
         <div className='col-lg-3 col-md-12 mx-auto'>
         <Link to='locations' className='d-flex justify-content-center align-items-center w-50'>See More 
